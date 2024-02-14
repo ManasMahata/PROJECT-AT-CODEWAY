@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: hsl(0, 93%, 63%);
+    color: #d9df2a;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #4114e3;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    background-color: #127ab1;
+    margin: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(43, 82, 174, 0.1);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #b18d2b;
+}
+
+ul.skills {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul.skills li {
+    width: 30%;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+ul.skills li .skill-name {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+ul.skills li .skill-level {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1e99a2;
+}
+
+ul.skills li .skill-progress {
+    height: 10px;
+    background-color: #a8278e;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+ul.skills li .skill-progress::before {
+    content: "";
+    height: 10px;
+    background-color: #e81212;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%; /* Change this value to set the progress level */
+    border-radius: 5px;
+}
